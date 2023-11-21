@@ -1,0 +1,859 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear::after {
+    content: "";
+    display: table;
+    position: relative;
+    clear: both;
+    width: 100%;
+}
+
+
+
+
+
+/* header section */
+
+
+
+
+header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+header .head .react-icon {
+    display: flex;
+}
+
+header .head .react-icon a {
+    display: inline-block;
+    color: #000;
+    font-size: 15px;
+    padding-right: 30px;
+    position: relative;
+}
+
+header .head .react-icon .oblic a::after {
+    content: "|";
+    position: absolute;
+    background: gray;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 33px;
+}
+
+
+
+
+/* nav bar */
+
+
+
+
+.navigation {
+    margin: 20px 0px 40px 0px;
+}
+
+.navigation .nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navigation .nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    /* padding: 2px 24px; */
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+}
+
+.navigation .nav ul a:hover::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.navigation .nav ul a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #222222;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+
+
+/* banner section */
+
+
+
+
+.banner-section .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+}
+
+.banner-section .owl-prev img {
+    width: 25px;
+}
+
+.banner-section .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+}
+
+.banner-section .owl-next img {
+    width: 25px;
+}
+
+.banner-section .item {
+    position: relative;
+}
+
+.banner-section .item .banner-text-a a {
+    position: absolute;
+    bottom: 19%;
+    left: 44%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.banner-section .item .banner-text-a a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+.banner-section .item .banner-text-b a {
+    position: absolute;
+    bottom: 13%;
+    left: 47%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.banner-section .item .banner-text-b a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+.banner-section .item .banner-text-c a {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.banner-section .item .banner-text-c a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+.banner-section .item .banner-text-d a {
+    position: absolute;
+    bottom: 22%;
+    left: 49%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.banner-section .item .banner-text-d a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+.banner-section .item .banner-text-d .img {
+    width: 100%;
+    position: relative;
+}
+
+.banner-section .item .banner-text-d .img img {
+    width: 230px;
+    position: absolute;
+    bottom: 340px;
+    left: 47%;
+}
+
+.banner-section .item .banner-text-d .ss {
+    display: inline-block;
+    position: absolute;
+    bottom: 286px;
+    left: 51%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 6px;
+    letter-spacing: 7px;
+}
+
+
+
+
+
+
+/* Collections section */
+
+
+
+
+
+.Collections-section .collection-top h2 {
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    margin: 56px 0px 0px 7px;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.Collections-section .collection-top h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    height: 1px;
+    width: 110px;
+    background: #ccc;
+    margin-left: -55px;
+}
+
+.Collections-section .collection-bottom {
+    margin-top: 60px;
+}
+
+.Collections-section .collection-bottom .item-left {
+    width: 40%;
+}
+
+
+.Collections-section .collection-bottom .item-right {
+    width: 40%;
+    margin: 50px 0px 0px 60px;
+}
+
+.Collections-section .collection-bottom .item-left img {
+    width: 100%;
+}
+
+.Collections-section .collection-bottom .item {
+    display: flex;
+    align-items: center;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing p {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing {
+    position: relative;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing::after {
+    content: "";
+    position: absolute;
+    background: url(../images/colection-img1-2.jpg) no-repeat 100%, 50%;
+    width: 100%;
+    height: 100%;
+    bottom: 226px;
+    left: 182px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+    margin: 50px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+
+.Collections-section .collection-bottom .item .item-l-writing-k h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-k p {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-k {
+    position: relative;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-k::after {
+    content: "";
+    position: absolute;
+    background: url(../images/colection-img-2.-2.jpg) no-repeat 100%, 50%;
+    width: 100%;
+    height: 100%;
+    bottom: 226px;
+    left: 182px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-k a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+    margin: 50px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-k a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+
+
+/* __________________________ */
+
+.Collections-section .collection-bottom .item .item-l-writing-kk h2 {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-kk p {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-kk {
+    position: relative;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-kk::after {
+    content: "";
+    position: absolute;
+    background: url(../images/three1.jpg) no-repeat 100%, 50%;
+    width: 100%;
+    height: 100%;
+    bottom: 226px;
+    left: 182px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-kk a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    padding: 14px 35px;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+    margin: 50px;
+}
+
+.Collections-section .collection-bottom .item .item-l-writing-kk a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* Celebrity section */
+
+
+
+
+
+.celebrity-section {
+    margin-bottom: 190px;
+}
+
+.celebrity-section .celebrity-top h2 {
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    margin: 60px 0px 0px 7px;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.celebrity-section .celebrity-top h2::after {
+    content: "";
+    position: absolute;
+    left: 48%;
+    bottom: -24px;
+    height: 2px;
+    width: 145px;
+    background: #ccc;
+    margin-left: -55px;
+}
+
+
+.celebrity-section .celebrity-bottom {
+    display: flex;
+    position: relative;
+    margin-top: 95px;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left {
+    width: 30%;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left .img {
+    width: 840px;
+    height: 570px;
+    position: absolute;
+    top: 20%;
+    left: 100px;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left img {
+    width: 100%;
+    position: relative;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left .dipi-name-in {
+    position: absolute;
+    bottom: -3%;
+    left: 10%;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left .dipi-name-in h4 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    line-height: 34px;
+    color: #4c4545;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left .dipi-name-in a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 37px;
+    padding: 20px 10px 20px 0;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    color: #555555;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-left .dipi-name-in a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 1px;
+    width: 87px;
+    background: #000;
+    bottom: 14px;
+    margin-left: -49px;
+}
+
+
+.celebrity-section .celebrity-bottom .celebrity-b-right {
+    width: 70%;
+    height: 570px;
+    background: #cfcfcf;
+
+}
+
+.celebrity-section .celebrity-b-right .celebrity-bb-right {
+    position: absolute;
+    top: 30%;
+    right: 24%;
+}
+
+
+.celebrity-section .celebrity-bottom .celebrity-b-right h3 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    color: #4c4545;
+    margin: 0px -45px 40px 0px;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-right .dipika-r {
+    font-size: 25px;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-right a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 60px;
+    padding: 16px 22px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.celebrity-section .celebrity-bottom .celebrity-b-right a:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+
+
+
+
+/* ShopOur section  */
+
+
+
+
+
+.shopour-section .shopour-top {
+    text-align: center;
+}
+
+.shopour-section .shopour-top h3 {
+    font-size: 48px;
+    font-family: 'Lato', sans-serif;
+    margin: 60px 0px 0px 7px;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.shopour-section .shopour-top h3::after {
+    content: "";
+    position: absolute;
+    left: 48%;
+    bottom: -24px;
+    height: 2px;
+    width: 145px;
+    background: #ccc;
+    margin-left: -50px;
+}
+
+.shopour-section .shopour-bottom {
+    margin-top: 120px;
+}
+
+.shopour-section .shopour-bottom .img {
+    width: 20%;
+}
+
+.shopour-section .shopour-bottom .img img {
+    width: 100%;
+}
+
+
+
+
+
+
+/* email section */
+
+
+
+
+
+.email-section {
+    margin-top: 120px;
+}
+
+.email-section .email {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.email-section .email-left p {
+    margin: 35px 0 0 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.email-section .email-right form .in-a {
+    width: 500px;
+    height: 44px;
+    border-radius: 0;
+    border: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.email-section .email-right form input[type="submit"] {
+    padding: 10px 22px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    transition: 0.5s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.email-section .email-right form input[type="submit"]:hover {
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+/* footer section */
+
+
+
+
+
+footer {
+    margin: 100px 0px;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer span {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+footer .footer ul {
+    list-style: none;
+}
+
+footer .footer ul li a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    margin-bottom: 7px;
+    transition: 0.5s ease-in-out;
+}
+
+footer .footer ul li a:hover {
+    color: #000;
+}
+
+footer .footer .box {
+    position: relative;
+    width: 27%;
+}
+
+footer .footer .box::after {
+    content: "";
+    position: absolute;
+    background: #888888;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 333px;
+}
+
+footer .footer .box-4 .fllow-top span {
+    display: block;
+}
+
+footer .footer .box-4 .fllow-top a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 0px 10px 20px 0px;
+    transition: 0.5s ease-in-out;
+}
+
+footer .footer .box-4 .fllow-top a:hover {
+    color: gray;
+}
+
+footer .footer .box-4 .fllow-bottom span {
+    display: block;
+    margin: 20px 0px 0px 0px;
+}
+
+footer .footer .box-4 .fllow-bottom img {
+    width: 100px;
+}
+
+
+
+
+
+
+/* copyright-section */
+
+
+
+
+
+.copyright-section {
+    background: #222222;
+    padding: 16px 50px;
+}
+
+.copyright-section .copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-section .copyright-left p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.copyright-section .copyright-right a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+}
+
+.copyright-section .copyright-right a:hover {
+    color: #888;
+}
+
+
+
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#222222, #282626);
+    /* border-radius: 10px; */
+}
