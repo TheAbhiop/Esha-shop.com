@@ -651,7 +651,25 @@ header .head .react-icon .oblic a::after {
     width: 100%;
 }
 
+.shopour-section .shopour-bottom .img {
+    margin: 0 5px;
+    cursor: pointer;
+}
 
+.shopour-section .shopour-bottom .slick-dots li button:before {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+
+.slick-next {
+    right: 0px;
+    display: none;
+}
+
+.slick-next:before {
+    content: "";
+}
 
 
 
